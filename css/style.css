@@ -1,0 +1,23 @@
+body {
+	background-color: #d6ebf2;
+}
+
+img.logo {
+	padding: 15px;
+}
+
+.panel-title {
+	margin-top: 10px;
+}
+
+.nav-pills {
+	padding: 10px 0;
+}
+
+.nav-pills > li {
+	width: 19.6%;
+}
+
+.tab-pane {
+	min-height: 450px;
+}
