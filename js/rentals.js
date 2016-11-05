@@ -1,0 +1,39 @@
+var json = [
+  {
+    header: 'Rental In High Demand Location!',
+    address: '1234 Main Street, Jacksonville, FL, 32222',
+    contactInfo: 'Call Jasper Burr at 904-545-2212',
+    description: [
+      'This is a 950 Sq. Ft., 2 Bedroom, 1 Bath, Apartment Home',
+      'Live minutes away from the beautiful lights and sounds of downtown Jacksonville. River City Landing is a beautifully landscaped community that surrounds our sparkling lake stocked with fish. Enjoy an afternoon by strolling our lush greenery or fishing from our gazebo.',
+      'Quietly secluded, everything you need to relax and enjoy yourself is within walking distance from your home. Play tennis on our lighted courts, swim in our lavish pools, or fish in our beautiful, fully stocked lake.',
+    ],
+    images: [
+      'example-rental.jpg',
+      'example-rental.jpg'
+    ]
+  },
+  {
+    header: 'Lots of space in this rental',
+    address: '5678 Main Street, Anytown, USA, 99999',
+    contactInfo: 'Call Jasper Burr at 904-545-2212',
+    description: [
+      '1570 Sq. Ft., 4 Bedroom, 2 Bathroom, $940 per month'
+    ],
+    images: [
+      'example-rental.jpg'
+    ]
+  },
+  {
+    address: '3456 Main Street, Anytown, USA, 99999',
+    images: [
+      'example-rental.jpg'
+    ]
+  },
+  {
+    address: '6789 Main Street, Anytown, USA, 99999',
+    description: [
+      '1830 Sq. Ft., 4 Bedroom + Den, 2 Bathroom, $1050 per month'
+    ]
+  }
+];

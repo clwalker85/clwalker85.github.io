@@ -8,6 +8,43 @@
   <link href="css/style.css" rel="stylesheet">
 	<script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/handlebars.min.js"></script>
+  <script src="js/require.min.js"></script>
+  <script id="rentals-template" type="text/x-handlebars-template">
+    {{#each this}}
+      <div>
+      {{#if header}}
+        <h3>{{header}}</h3>
+      {{^}}
+        <h3>Property For Rent</h3>
+      {{/if}}
+        <p>Address: {{address}}</p>
+      {{#if description}}
+        {{#each description as |descBlock|}}
+        <p>
+          {{descBlock}}
+        </p>
+        {{/each}}
+      {{/if}}
+      {{#if images}}
+        {{#each images as |imageUrl|}}
+          <a href="images/{{imageUrl}}"><img class="img-responsive img-rounded" src="images/{{imageUrl}}"></a>
+          <br />
+        {{/each}}
+      {{/if}}
+      {{#if contactInfo}}
+        <p>{{contactInfo}}</p>
+      {{^}}
+        <p>
+          <a href="mailto:jasperburr@gmail.com?Subject=OFFSHOREJASPER%20RENTAL%20{{encode address}}">Email a rental request</a>
+        </p>
+      {{/if}}
+      </div>
+      <br />
+    {{/each}}
+  </script>
+  <script src="js/rentals.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
  
@@ -24,7 +61,7 @@
 						</span>
 					</div>
 					<div class="panel-body">
-						Due to the impact of Hurricane Hermine, shipping of perishable
+						Due to the impact of Hurricane Matthew, shipping of perishable
 						packages destined for Florida and its surrounding regions may be
 						delayed.
 					</div>
@@ -42,6 +79,7 @@
 				<ul class="nav nav-pills">
 					<li class="active text-center"><a href="#home" data-toggle="pill">Home</a></li>
 					<li class="text-center"><a href="#store" data-toggle="pill">Store</a></li>
+					<li class="text-center"><a href="#rentals" data-toggle="pill">Rentals</a></li>
 					<li class="text-center"><a href="#oil-specs" data-toggle="pill">Oil Specs</a></li>
 					<li class="text-center"><a href="#about-us" data-toggle="pill">About Us</a></li>
 					<li class="text-center"><a href="#contact" data-toggle="pill">Contact</a></li>
@@ -146,6 +184,12 @@
 								</p>
 							</div>
 
+							<div class="tab-pane fade text-center" id="rentals">
+								<p>
+									COMING SOON
+								</p>
+							</div>
+
 							<div class="tab-pane fade text-center" id="oil-specs">
 								<p>
 									COMING SOON
@@ -190,6 +234,8 @@
 				</div>
 			</div>
 		</div>
+
+    <br />
 	</div>
 </div>
  
