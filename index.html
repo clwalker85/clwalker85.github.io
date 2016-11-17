@@ -19,12 +19,12 @@
         <h3>Property For Rent</h3>
       {{/if}}
         <p>Address: {{address}}</p>
-      {{#if description}}
-        {{#each description as |descBlock|}}
+      {{#if contactInfo}}
+        <p>{{contactInfo}}</p>
+      {{^}}
         <p>
-          {{descBlock}}
+          <a href="mailto:jasperburr@gmail.com?Subject=OFFSHOREJASPER%20RENTAL%20{{encode address}}">Email a rental request</a>
         </p>
-        {{/each}}
       {{/if}}
       {{#if images}}
         {{#each images as |imageUrl|}}
@@ -32,12 +32,12 @@
           <br />
         {{/each}}
       {{/if}}
-      {{#if contactInfo}}
-        <p>{{contactInfo}}</p>
-      {{^}}
+      {{#if description}}
+        {{#each description as |descBlock|}}
         <p>
-          <a href="mailto:jasperburr@gmail.com?Subject=OFFSHOREJASPER%20RENTAL%20{{encode address}}">Email a rental request</a>
+          {{descBlock}}
         </p>
+        {{/each}}
       {{/if}}
       </div>
       <br />
@@ -96,6 +96,7 @@
 									success.
 								</p>
 
+                <!--
 								<div id="highlight-carousel" class="carousel slide" data-ride="carousel">
 									<ol class="carousel-indicators">
 										<li data-target="#highlight-carousel" data-slide-to="0" class="active"></li>
@@ -127,6 +128,7 @@
 										</div>
 									</div>
 								</div>
+                --!>
 
                 <br />
 
@@ -216,9 +218,11 @@
 									seafood that cannot be found anywhere else at such a price.
 								</p>
 
+                <!--
 								<p>
 									<img class="img-responsive img-rounded center-block" src="images/jasper-lobster.bmp">
 								</p>
+                --!>
 							</div>
 
 							<div class="tab-pane fade text-center" id="contact">
