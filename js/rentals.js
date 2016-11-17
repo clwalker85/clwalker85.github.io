@@ -1,39 +1,46 @@
 var json = [
   {
-    header: 'Rental In High Demand Location!',
-    address: '1234 Main Street, Jacksonville, FL, 32222',
-    contactInfo: 'Call Jasper Burr at 904-545-2212',
+    header: '4 beds, 4 baths, 4,095 sqft - Price: $750,000 - Rent: $3500 to $4500 per month. This is market prices.',
+    address: '2137 Lake Vilma Drive, Orlando, FL, 32835',
+    contactInfo: 'Email Jasper Burr at deal2017@comcast.net',
     description: [
-      'This is a 950 Sq. Ft., 2 Bedroom, 1 Bath, Apartment Home',
-      'Live minutes away from the beautiful lights and sounds of downtown Jacksonville. River City Landing is a beautifully landscaped community that surrounds our sparkling lake stocked with fish. Enjoy an afternoon by strolling our lush greenery or fishing from our gazebo.',
-      'Quietly secluded, everything you need to relax and enjoy yourself is within walking distance from your home. Play tennis on our lighted courts, swim in our lavish pools, or fish in our beautiful, fully stocked lake.',
+			'Executive home in Gated Palma Vista in South West Orlando. Home features all the upgrades, granite counters, new built in refrigerator, marble flooring, 4 large bedrooms, 4 full baths, office, exercise room, huge 2000 sf lanai with screened and salt water pool and spa, outdoor kitchen with Viking appliances, 2 fireplaces, intercom, 5 sets of french doors leading out to pool, tile roof, paver driveway and much more! The Master bedroom has venitian plaster walls, fireplace, large master bath with jetted spa, bidet and large walk in closet. Almost 3/4 of an acre with fenced/walled backyard.',
+			'',
+			'Facts:',
+			'',
+			'- Lot: 0.59 acres',
+			'- Single Family',
+			'- Built in 1991',
+			'',
+			'- All time views: 4,333',
+			'- 39 shoppers saved this home',
+			'- Cooling: Central',
+			'',
+			'- Heating: Heat pump',
+			'- Last sold: Nov 2002 for $475,000',
+			'',
+			'Features:',
+			'',
+			'- Attic',
+			'- Cable Ready',
+			'- Fireplace',
+			'- Flooring: Carpet',
+			'',
+			'- Gated Entry',
+			'- Hot Tub/Spa',
+			'- Intercom',
+			'- Parking: Garage - Attached, 783 sqft garage',
+			'',
+			'- Patio',
+			'- Pool',
+			'- Vaulted Ceiling',
     ],
     images: [
-      'example-rental.jpg',
-      'example-rental.jpg'
-    ]
-  },
-  {
-    header: 'Lots of space in this rental',
-    address: '5678 Main Street, Anytown, USA, 99999',
-    contactInfo: 'Call Jasper Burr at 904-545-2212',
-    description: [
-      '1570 Sq. Ft., 4 Bedroom, 2 Bathroom, $940 per month'
-    ],
-    images: [
-      'example-rental.jpg'
-    ]
-  },
-  {
-    address: '3456 Main Street, Anytown, USA, 99999',
-    images: [
-      'example-rental.jpg'
-    ]
-  },
-  {
-    address: '6789 Main Street, Anytown, USA, 99999',
-    description: [
-      '1830 Sq. Ft., 4 Bedroom + Den, 2 Bathroom, $1050 per month'
+      '2137LakeVilma-1.jpg',
+      '2137LakeVilma-2.jpg',
+      '2137LakeVilma-3.jpg',
+      '2137LakeVilma-4.jpg',
+      '2137LakeVilma-5.jpg'
     ]
   }
 ];
