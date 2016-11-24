@@ -23,7 +23,7 @@
         <p>{{contactInfo}}</p>
       {{^}}
         <p>
-          <a href="mailto:jasperburr@gmail.com?Subject=OFFSHOREJASPER%20RENTAL%20{{encode address}}">Email a rental request</a>
+          <a href="mailto:deal2017@comcast.net">Email a rental request</a>
         </p>
       {{/if}}
       {{#if images}}
@@ -43,6 +43,24 @@
       <br />
     {{/each}}
   </script>
+  <script id="rental-previews-template" type="text/x-handlebars-template">
+    {{#each this}}
+      <div>
+      {{#if header}}
+        <h4>{{address}} - {{header}}</h4>
+      {{^}}
+        <h4>{{address}}</h4>
+      {{/if}}
+      {{#if images}}
+        {{#with images.[0]}}
+          <a href="images/{{this}}"><img class="img-responsive img-rounded" src="images/{{this}}"></a>
+          <br />
+        {{/with}}
+      {{/if}}
+      </div>
+      <br />
+    {{/each}}
+  </script>
   <script src="js/rentals.js"></script>
   <script src="js/main.js"></script>
 </head>
@@ -55,23 +73,18 @@
 				<img class="logo img-responsive center-block" src="images/logo.png">
 
 				<div class="panel panel-default">
-					<div class="panel-title text-center">
-						<span class="text-danger">
-							Hurricane Alert
-						</span>
-					</div>
 					<div class="panel-body">
-						Due to the impact of Hurricane Matthew, shipping of perishable
-						packages destined for Florida and its surrounding regions may be
-						delayed.
+              Sustainable relationships with local fishermen and small
+              businesses give us access to seafood of the highest quality
+              and freshness. Helping them reach new markets is our key to
+              success.
 					</div>
 				</div>
 
-				<div class="panel panel-default hidden-xs">
+				<div class="panel panel-default">
 					<div class="panel-body">
-						OFFSHORE JASPER proudly supports the military and armed forces that
-						protect this country. Our business relies on their constant watch,
-						and we thank them for their service.
+              Several rentals in high-demand locations within the Jacksonville area are
+              also available.
 					</div>
 				</div>
 			</div>
@@ -90,56 +103,10 @@
 						<div class="tab-content">
 							<div class="tab-pane fade in active" id="home">
 								<p>
-									Sustainable relationships with local fishermen and small
-									businesses give us access to seafood of the highest quality
-									and freshness. Helping them reach new markets is our key to
-									success.
+                  Visit our Rentals page for more on the listings below!
 								</p>
-
-                <!--
-								<div id="highlight-carousel" class="carousel slide" data-ride="carousel">
-									<ol class="carousel-indicators">
-										<li data-target="#highlight-carousel" data-slide-to="0" class="active"></li>
-										<li data-target="#highlight-carousel" data-slide-to="1"></li>
-										<li data-target="#highlight-carousel" data-slide-to="2"></li>
-										<li data-target="#highlight-carousel" data-slide-to="3"></li>
-										<li data-target="#highlight-carousel" data-slide-to="4"></li>
-										<li data-target="#highlight-carousel" data-slide-to="5"></li>
-									</ol>
-
-									<div class="carousel-inner" role="listbox">
-										<div class="item active">
-											<img class="img-responsive img-rounded" src="images/oysters.jpg">
-										</div>
-										<div class="item">
-											<img class="img-responsive img-rounded" src="images/salmon.jpg">
-										</div>
-										<div class="item">
-											<img class="img-responsive img-rounded" src="images/lobster.jpg">
-										</div>
-										<div class="item">
-											<img class="img-responsive img-rounded" src="images/tuna.jpg">
-										</div>
-										<div class="item">
-											<img class="img-responsive img-rounded" src="images/mullet.jpg">
-										</div>
-										<div class="item">
-											<img class="img-responsive img-rounded" src="images/fried-fish.jpg">
-										</div>
-									</div>
-								</div>
-                --!>
-
                 <br />
-
-								<p>
-                  Several rentals in high-demand locations within the Jacksonville area are
-                  also available.
-								</p>
-
-								<p>
-									<img class="img-responsive img-rounded center-block" src="images/jasper-rental.jpg">
-								</p>
+                <div id="rental-previews"></div>
 							</div>
 
 							<div class="tab-pane fade" id="store">
