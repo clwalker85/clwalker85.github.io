@@ -43,10 +43,26 @@ var json = [
     ]
   },
   {
-    header: 'Price: $250,000',
+    header: 'ASKING $250,000, Lease $1500 to $1900 per month',
     address: '12102 Wynnfield Lakes Cr, Jacksonville, FL, 32246',
     images: [
       '12102WynnfieldLakes-1.jpg'
+    ],
+    description: [
+			'1737 square foot single family home has 3 bedrooms and 2.0 bathrooms.',
+			'',
+			'Features:',
+			'',
+			'- Parking: 462 sqft garage',
+      '',
+			'Facts:',
+			'',
+			'- Lot: 5,500 sqft',
+			'- Single Family',
+			'- Built in 2009',
+			'',
+			'- Cooling: Central',
+			'- Heating: Forced air',
     ]
   }
 ];
