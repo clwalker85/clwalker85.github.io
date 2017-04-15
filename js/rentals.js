@@ -1,4 +1,11 @@
 var json = [
+	{
+    header: 'Hidden Hills single family home',
+    address: '3970 High Pine Rd, Jacksonville, FL, 32225',
+    description: [
+			'3 bedroom, 2.0 bathroom, 1821 square ft',
+			]
+  },
   {
     header: '4 beds, 4 baths, 4,095 sqft - Price: $750,000 - Rent: $3500 to $4500 per month. This is market prices.',
     address: '2137 Lake Vilma Drive, Orlando, FL, 32835',
